@@ -27,9 +27,12 @@ nlu:
     - I have a rash that i need a doctor to look at
     - I have been having skin problems that arent going away
 
-- intent: answer
+- intent: answer_yes
   examples: |
     - Yes
+
+- intent: answer_no
+  examples: |
     - No
 
 - intent: date_time
@@ -38,6 +41,11 @@ nlu:
     - Book for [today](date) at [6 pm](time)
     - [today](date) at [6 pm](time)
     - [14 October](date) at [6 pm](time)
+
+- intent: concern
+  examples: |
+    - [I have body pain](concern)
+    - [I am not able to eat properly](concern)
 
 # - intent: mood_great
 #   examples: |

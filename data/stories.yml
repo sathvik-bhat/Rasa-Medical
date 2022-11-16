@@ -8,7 +8,18 @@ stories:
   - action: utter_concern
   - intent: rash
   - action: utter_pain
-  - intent: answer
+  - intent: answer_yes
+  - action: utter_date_time1
+
+- story: sad path
+  steps:
+  - intent: appointment
+  - action: utter_concern
+  - intent: rash
+  - action: utter_pain
+  - intent: answer_no
+  - action: utter_ask_problem
+  - intent: concern
   - action: utter_date_time1
 
 # - story: sad path 1
